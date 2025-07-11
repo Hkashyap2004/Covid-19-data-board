@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COVID-19 Data Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>COVID-19 Interactive Dashboard</h1>
+
+    <div class="summary-cards">
+        <div class="card">
+            <h2>Total Cases</h2>
+            <p id="total-cases">Loading...</p>
+        </div>
+        <div class="card">
+            <h2>Total Deaths</h2>
+            <p id="total-deaths">Loading...</p>
+        </div>
+        <div class="card">
+            <h2>Total Recovered</h2>
+            <p id="total-recovered">Loading...</p>
+        </div>
+    </div>
+
+    <div class="chart-container">
+        <h2>Global Data Overview</h2>
+        <canvas id="globalPieChart"></canvas>
+    </div>
+
+    <div class="chart-container">
+        <h2>Historical Data (Last 30 Days)</h2>
+        <canvas id="historicalLineChart"></canvas>
+    </div>
+
+    <div class="chart-container">
+        <h2>Top 10 Affected Countries</h2>
+        <canvas id="topCountriesBarChart"></canvas>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
